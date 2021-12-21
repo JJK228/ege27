@@ -12,11 +12,21 @@ void div_()
     int n(0);
     cin >> n;
     vector <int> numbers(n);
+    int max_div_2 = -1001;
+    int max_not_div_2 = -1001;
     for (int i(0); i<n; i++)
+            {
             cin>> numbers[i];
-    cout << endl;
-    for (int i(0); i<n; i++)
-        cout << numbers[i] << " ";
+            if (numbers[i] % 2 == 0)
+                {   if (numbers[i] > max_div_2)
+                        max_div_2 = numbers[i];
+                }
+
+            else if (numbers[i] % 2 != 0)
+                    if (numbers[i] > max_not_div_2)
+                        max_not_div_2 = numbers[i];
+            }
+    cout << max_not_div_2 << ' ' << max_div_2;
 
 }
 
