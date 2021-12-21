@@ -18,6 +18,6 @@ void  div()
 
 int main()
 {
-    div()
+    div();
     return 0;
 }
