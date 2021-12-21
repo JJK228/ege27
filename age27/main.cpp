@@ -20,7 +20,16 @@ void if_()
     for (int i(0); i < 4; i++)
         cin >> numbers[i];
     for (int j(0); j < n-4; j++)
+    {
 
+        if (numbers[0] < min_num)
+            min_num = numbers[0];
+        for (int i(0); i < 3; i++)
+            numbers[i] = numbers[i+1];
+        cin >> numbers[3];
+        if ((numbers[3] + min_num) < min_sum)
+            min_sum = numbers[3] + min_num;
+    }
     cout << min_sum << endl;
 }
 
