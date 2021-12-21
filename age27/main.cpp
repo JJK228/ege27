@@ -19,8 +19,13 @@ void max_sum_div_eff_2()
             counters[i][j] = 0;
         }
     }
+    cin >> x;
 
-    std::cin >> x;
+    while (x != -9999)
+    {
+        counters[x > 40][x % 40] += 1;
+        cin >> x;
+    }
 }
 int main()
 {
