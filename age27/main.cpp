@@ -1,9 +1,19 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
+void div_()
+{
+    /**
+     1 считать число
+     2 добавить его к одному из счетчиков соответсвующего класса
+     3 ответ
+    */
+}
+
 int main()
 {
-    cout << "Hello world!" << endl;
+    div_();
     return 0;
 }
