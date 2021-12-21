@@ -18,15 +18,14 @@ void div_()
         cin >> cur;
         if (cur % 6 == 0)
             n6++;
-        else if (cur % 2 ==0)
+        else if (cur % 2 ==0 and cur % 3 != 0)
             n2++;
-        else if (cur % 3 == 0)
+        else if (cur % 3 == 0 and cur % 2 != 0)
             n3++;
     }
 
     no = n - n6 - n3 - n2;
-    cout << n6 << ' ' << n3 << ' ' << n2 << ' ' <<  no;
-
+    cout << n6 * n2 + n6 * n3 + n6 * no + n6*(n6-1) / 2 + n2 * n3;
 
 }
 
