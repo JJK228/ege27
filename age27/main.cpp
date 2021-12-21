@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 void div_()
@@ -10,6 +11,13 @@ void div_()
      4 проверить делимость произведений
      5 посчиттать и выести коичество подходящих пар
     */
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n, 0);
+    for (int i(0); i < n; i++)
+        cin >> numbers[i];
+    for (int i(0); i<n; i++)
+        cout << numbers[i] << " ";
 }
 int main()
 {
